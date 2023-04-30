@@ -1,0 +1,6 @@
+*.crt
+*.jks
+*_creds
+*.key
+*.pem
+.idea
