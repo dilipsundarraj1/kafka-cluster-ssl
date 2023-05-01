@@ -4,3 +4,7 @@
 *.key
 *.pem
 .idea
+*.srl
+*.csr
+*.req
+.DS_Store
