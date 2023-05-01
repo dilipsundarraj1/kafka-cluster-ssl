@@ -16,7 +16,7 @@ openssl x509 -req -CA snakeoil-ca-1.crt -CAkey snakeoil-ca-1.key -in kafkacat.cl
 
 
 
-for i in broker1  producer consumer
+for i in kafka1  producer consumer
 do
 	echo $i
 	# Create keystores
