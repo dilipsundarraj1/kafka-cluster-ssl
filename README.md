@@ -4,8 +4,12 @@ This repo has the repo for the kafka-cluster-ssl.
 
 ## Generate the required certs for setting up the ssl secured cluster
 
-```agsl
-sh secrets/create-certs.sh
+- Navigate to the **secrets** directory.
+
+- Run the below command.
+
+```script
+sh create-certs.sh
 ```
 
 ## Produce/Consumer Messages in a SSL Secured Environment
@@ -17,7 +21,7 @@ docker exec --interactive --tty kafka1  \
 kafka-console-producer --bootstrap-server localhost:9092 \
                        --topic test-topic \
                        --producer.config /etc/kafka/properties/producer.properties
-                       
+
 ```
 
 - Produce Messages to the topic.
